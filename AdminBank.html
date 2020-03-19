@@ -52,6 +52,32 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
+<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne slette en kunde</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:63342/TestingBank/Index.php<datalist><option>http://localhost:63342/TestingBank/Index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Admin<datalist><option>link=Admin</option><option>//a[contains(text(),'Admin')]</option><option>//div[@id='navbar-main']/ul/li/a</option><option>//a[contains(@href, '/TestingBank/View/loggInnAdmin.php')]</option><option>//li/a</option><option>css=li &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=bruker<datalist><option>id=bruker</option><option>//input[@id='bruker']</option><option>//input</option><option>css=#bruker</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=bruker<datalist><option>id=bruker</option><option>//input[@id='bruker']</option><option>//input</option><option>css=#bruker</option></datalist></td><td>Admin</td>
+</tr>
+<tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td>Admin</td>
+</tr>
+<tr><td>click</td><td>id=loggInn<datalist><option>id=loggInn</option><option>//input[@id='loggInn']</option><option>//form/input</option><option>css=#loggInn</option></datalist></td><td></td>
+</tr>
+<tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'Slett')])[2]<datalist><option>xpath=(//a[contains(text(),'Slett')])[2]</option><option>//a[@onclick='slettKunde(2)']</option><option>//div[@id='listKunde']/table/tbody/tr[2]/td[10]/a</option><option>//tr[2]/td[10]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>assertConfirmation</td><td>Slett kunde med personnummer 12345678910<datalist><option>Slett kunde med personnummer 12345678910</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
 <tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne slette en konto</td></tr>
 </thead>
 <tbody>
