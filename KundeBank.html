@@ -54,5 +54,85 @@
 <tr><td>assertText</td><td>id=feilMelding<datalist><option>id=feilMelding</option><option>//div[@id='feilMelding']</option><option>//div[3]/div[3]</option><option>css=#feilMelding</option></datalist></td><td>Feil personnummer / passord!</td>
 </tr>
 </tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Som kunde ønsker jeg en datospesifikk transaksjonslogg over en valgt konto</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:63342/TestingBank/Index.php<datalist><option>http://localhost:63342/TestingBank/Index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Logg inn<datalist><option>link=Logg inn</option><option>//a[contains(text(),'Logg inn')]</option><option>//a[contains(@href, 'View/loggInn.php')]</option><option>//div[2]/a</option><option>css=a.btn.btn-success</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td>01010110523</td>
+</tr>
+<tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td>HeiHei</td>
+</tr>
+<tr><td>click</td><td>id=loggInn<datalist><option>id=loggInn</option><option>//button[@id='loggInn']</option><option>//div[2]/button</option><option>css=#loggInn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Transaksjoner<datalist><option>link=Transaksjoner</option><option>//a[contains(text(),'Transaksjoner')]</option><option>//div[@id='navbar-main']/ul/li[4]/a</option><option>//a[contains(@href, '../View/transaksjon.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//select[@id='kontoNr']</option><option>//div[@id='selekt']/select</option><option>//select</option><option>css=#kontoNr</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=fraDato<datalist><option>id=fraDato</option><option>//input[@id='fraDato']</option><option>//input</option><option>css=#fraDato</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=fraDato<datalist><option>id=fraDato</option><option>//input[@id='fraDato']</option><option>//input</option><option>css=#fraDato</option></datalist></td><td>2015-01-05</td>
+</tr>
+<tr><td>click</td><td>id=tilDato<datalist><option>id=tilDato</option><option>//input[@id='tilDato']</option><option>//div[3]/input</option><option>css=#tilDato</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=tilDato<datalist><option>id=tilDato</option><option>//input[@id='tilDato']</option><option>//div[3]/input</option><option>css=#tilDato</option></datalist></td><td>2020-03-17</td>
+</tr>
+<tr><td>click</td><td>id=sok<datalist><option>id=sok</option><option>//button[@id='sok']</option><option>//div[2]/button</option><option>css=#sok</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Som kunde ønsker jeg en transaksjonslogg over en valgt konto</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:63342/TestingBank/Index.php<datalist><option>http://localhost:63342/TestingBank/Index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Logg inn<datalist><option>link=Logg inn</option><option>//a[contains(text(),'Logg inn')]</option><option>//a[contains(@href, 'View/loggInn.php')]</option><option>//div[2]/a</option><option>css=a.btn.btn-success</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td>01010110523</td>
+</tr>
+<tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td>HeiHei</td>
+</tr>
+<tr><td>click</td><td>id=loggInn<datalist><option>id=loggInn</option><option>//button[@id='loggInn']</option><option>//div[2]/button</option><option>css=#loggInn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Transaksjoner<datalist><option>link=Transaksjoner</option><option>//a[contains(text(),'Transaksjoner')]</option><option>//div[@id='navbar-main']/ul/li[4]/a</option><option>//a[contains(@href, '../View/transaksjon.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//select[@id='kontoNr']</option><option>//div[@id='selekt']/select</option><option>//select</option><option>css=#kontoNr</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=sok<datalist><option>id=sok</option><option>//button[@id='sok']</option><option>//div[2]/button</option><option>css=#sok</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Som kunde ønsker jeg oversikt over mine kontoer</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:63342/TestingBank/Index.php<datalist><option>http://localhost:63342/TestingBank/Index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Logg inn<datalist><option>link=Logg inn</option><option>//a[contains(text(),'Logg inn')]</option><option>//a[contains(@href, 'View/loggInn.php')]</option><option>//div[2]/a</option><option>css=a.btn.btn-success</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td>01010110523</td>
+</tr>
+<tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td>HeiHei</td>
+</tr>
+<tr><td>click</td><td>id=loggInn<datalist><option>id=loggInn</option><option>//button[@id='loggInn']</option><option>//div[2]/button</option><option>css=#loggInn</option></datalist></td><td></td>
+</tr>
+</tbody></table>
 </body>
 </html>
