@@ -274,5 +274,41 @@
 <tr><td></td><td><datalist><option></option></datalist></td><td></td>
 </tr>
 </tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Som kunde ønsker jeg å endre passord til innlogging</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/Index.php<datalist><option>http://localhost/TestingBank/Index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Logg inn<datalist><option>link=Logg inn</option><option>//a[contains(text(),'Logg inn')]</option><option>//a[contains(@href, 'View/loggInn.php')]</option><option>//div[2]/a</option><option>css=a.btn.btn-success</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td>12345678912</td>
+</tr>
+<tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td>HeiHei</td>
+</tr>
+<tr><td>click</td><td>id=loggInn<datalist><option>id=loggInn</option><option>//button[@id='loggInn']</option><option>//div[2]/button</option><option>css=#loggInn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Kunde-info<datalist><option>link=Kunde-info</option><option>//a[contains(text(),'Kunde-info')]</option><option>//div[@id='navbar-main']/ul/li[5]/a</option><option>//a[contains(@href, '../View/kundeInfo.php')]</option><option>//li[5]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[8]/div/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[8]/div/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>doubleClick</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[8]/div/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[8]/div/input</option><option>css=#passord</option></datalist></td><td>HEIHEI</td>
+</tr>
+<tr><td>click</td><td>//div[8]<datalist><option>//div[8]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=endre<datalist><option>id=endre</option><option>//button[@id='endre']</option><option>//div[2]/button</option><option>css=#endre</option></datalist></td><td></td>
+</tr>
+<tr><td>assertValue</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[8]/div/input</option><option>css=#passord</option></datalist></td><td>HEIHEI</td>
+</tr>
+</tbody></table>
 </body>
 </html>
