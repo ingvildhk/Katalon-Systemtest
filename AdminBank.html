@@ -11,6 +11,10 @@
 <tr><td rowspan="1" colspan="3">Som administrator ønsker jeg feilmelding ved innloggingsproblemer</td></tr>
 </thead>
 <tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBInit.php<datalist><option>http://localhost/TestingBank/DAL/DBInit.php</option></datalist></td><td></td>
+</tr>
 <tr><td>open</td><td>http://localhost/TestingBank/Index.php<datalist><option>http://localhost/TestingBank/Index.php</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>link=Admin<datalist><option>link=Admin</option><option>//a[contains(text(),'Admin')]</option><option>//div[@id='navbar-main']/ul/li/a</option><option>//a[contains(@href, '/TestingBank/View/loggInnAdmin.php')]</option><option>//li/a</option><option>css=li &gt; a</option></datalist></td><td></td>
@@ -55,6 +59,10 @@
 <tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne registrere en ny konto</td></tr>
 </thead>
 <tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBInit.php<datalist><option>http://localhost/TestingBank/DAL/DBInit.php</option></datalist></td><td></td>
+</tr>
 <tr><td>open</td><td>http://localhost/TestingBank/View/loggInnAdmin.php<datalist><option>http://localhost/TestingBank/View/loggInnAdmin.php</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>id=bruker<datalist><option>id=bruker</option><option>//input[@id='bruker']</option><option>//input</option><option>css=#bruker</option></datalist></td><td></td>
@@ -129,7 +137,11 @@
 <tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne slette en kunde</td></tr>
 </thead>
 <tbody>
-<tr><td>open</td><td>http://localhost:63342/TestingBank/Index.php<datalist><option>http://localhost:63342/TestingBank/Index.php</option></datalist></td><td></td>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBInit.php<datalist><option>http://localhost/TestingBank/DAL/DBInit.php</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://localhost/TestingBank/Index.php<datalist><option>http://localhost:63342/TestingBank/Index.php</option><option>http://localhost/TestingBank/Index.php</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>link=Admin<datalist><option>link=Admin</option><option>//a[contains(text(),'Admin')]</option><option>//div[@id='navbar-main']/ul/li/a</option><option>//a[contains(@href, '/TestingBank/View/loggInnAdmin.php')]</option><option>//li/a</option><option>css=li &gt; a</option></datalist></td><td></td>
 </tr>
@@ -157,6 +169,10 @@
 <tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne slette en konto</td></tr>
 </thead>
 <tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBInit.php<datalist><option>http://localhost/TestingBank/DAL/DBInit.php</option></datalist></td><td></td>
+</tr>
 <tr><td>open</td><td>http://localhost/TestingBank/View/loggInnAdmin.php<datalist><option>http://localhost/TestingBank/View/loggInnAdmin.php</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>id=bruker<datalist><option>id=bruker</option><option>//input[@id='bruker']</option><option>//input</option><option>css=#bruker</option></datalist></td><td></td>
@@ -179,6 +195,8 @@
 </tr>
 <tr><td>click</td><td>link=Slett<datalist><option>link=Slett</option><option>//a[contains(text(),'Slett')]</option><option>//a[@onclick='slettKonto(1)']</option><option>//div[@id='endreKonto']/table/tbody/tr/td[7]/a</option><option>//td[7]/a</option><option>css=a.btn.btn-danger</option></datalist></td><td></td>
 </tr>
+<tr><td>assertTextNotPresent</td><td>id=kontonummer3<datalist><option>id=kontonummer3</option></datalist></td><td></td>
+</tr>
 <tr><td>assertConfirmation</td><td>Slett kunde med kontonummer 105010123456<datalist><option>Slett kunde med kontonummer 105010123456</option></datalist></td><td></td>
 </tr>
 </tbody></table>
@@ -187,6 +205,10 @@
 <tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne endre informasjon om kunde</td></tr>
 </thead>
 <tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBInit.php<datalist><option>http://localhost/TestingBank/DAL/DBInit.php</option></datalist></td><td></td>
+</tr>
 <tr><td>open</td><td>http://localhost/TestingBank/View/loggInnAdmin.php<datalist><option>http://localhost/TestingBank/View/loggInnAdmin.php</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>id=bruker<datalist><option>id=bruker</option><option>//input[@id='bruker']</option><option>//input</option><option>css=#bruker</option></datalist></td><td></td>
@@ -245,6 +267,10 @@
 <tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å registrere ny kunde</td></tr>
 </thead>
 <tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBInit.php<datalist><option>http://localhost/TestingBank/DAL/DBInit.php</option></datalist></td><td></td>
+</tr>
 <tr><td>open</td><td>http://localhost/TestingBank/Index.php<datalist><option>http://localhost/TestingBank/Index.php</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>link=Admin<datalist><option>link=Admin</option><option>//a[contains(text(),'Admin')]</option><option>//div[@id='navbar-main']/ul/li/a</option><option>//a[contains(@href, '/TestingBank/View/loggInnAdmin.php')]</option><option>//li/a</option><option>css=li &gt; a</option></datalist></td><td></td>
@@ -263,7 +289,7 @@
 </tr>
 <tr><td>click</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//input</option><option>css=#personnummer</option></datalist></td><td></td>
 </tr>
-<tr><td>type</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//input</option><option>css=#personnummer</option></datalist></td><td>12345678901</td>
+<tr><td>type</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//input</option><option>css=#personnummer</option></datalist></td><td>12345678900</td>
 </tr>
 <tr><td>type</td><td>id=fornavn<datalist><option>id=fornavn</option><option>//input[@id='fornavn']</option><option>//div[2]/input</option><option>css=#fornavn</option></datalist></td><td>Sinna</td>
 </tr>
@@ -281,7 +307,7 @@
 </tr>
 <tr><td>click</td><td>id=regKunde<datalist><option>id=regKunde</option><option>//button[@id='regKunde']</option><option>//div[2]/button</option><option>css=#regKunde</option></datalist></td><td></td>
 </tr>
-<tr><td>assertValue</td><td>id=personnummer2<datalist><option>id=personnummer2</option><option>//input[@id='personnummer2']</option><option>//div[@id='listKunde']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#personnummer2</option></datalist></td><td>12345678901</td>
+<tr><td>assertValue</td><td>id=personnummer2<datalist><option>id=personnummer2</option><option>//input[@id='personnummer2']</option><option>//div[@id='listKunde']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#personnummer2</option></datalist></td><td>12345678900</td>
 </tr>
 <tr><td>assertValue</td><td>id=fornavn2<datalist><option>id=fornavn2</option><option>//input[@id='fornavn2']</option><option>//div[@id='listKunde']/table/tbody/tr[2]/td[2]/input</option><option>//tr[2]/td[2]/input</option><option>css=#fornavn2</option></datalist></td><td>Sinna</td>
 </tr>
@@ -301,6 +327,10 @@
 <tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å endre en eksisterende konto</td></tr>
 </thead>
 <tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBInit.php<datalist><option>http://localhost/TestingBank/DAL/DBInit.php</option></datalist></td><td></td>
+</tr>
 <tr><td>open</td><td>http://localhost/TestingBank/Index.php<datalist><option>http://localhost/TestingBank/Index.php</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>link=Admin<datalist><option>link=Admin</option><option>//a[contains(text(),'Admin')]</option><option>//div[@id='navbar-main']/ul/li/a</option><option>//a[contains(@href, '/TestingBank/View/loggInnAdmin.php')]</option><option>//li/a</option><option>css=li &gt; a</option></datalist></td><td></td>
