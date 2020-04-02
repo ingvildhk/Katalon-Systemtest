@@ -56,7 +56,101 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne registrere en ny konto</td></tr>
+<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg feilmelding og stans av prosess når input er ugyldig under registrering av ny kunde</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/Index.php<datalist><option>http://localhost/TestingBank/Index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Admin<datalist><option>link=Admin</option><option>//a[contains(text(),'Admin')]</option><option>//div[@id='navbar-main']/ul/li/a</option><option>//a[contains(@href, '/TestingBank/View/loggInnAdmin.php')]</option><option>//li/a</option><option>css=li &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=bruker<datalist><option>id=bruker</option><option>//input[@id='bruker']</option><option>//input</option><option>css=#bruker</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=bruker<datalist><option>id=bruker</option><option>//input[@id='bruker']</option><option>//input</option><option>css=#bruker</option></datalist></td><td>Admin</td>
+</tr>
+<tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td>Admin</td>
+</tr>
+<tr><td>click</td><td>id=loggInn<datalist><option>id=loggInn</option><option>//input[@id='loggInn']</option><option>//form/input</option><option>css=#loggInn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Registrer kunde<datalist><option>link=Registrer kunde</option><option>//a[contains(text(),'Registrer kunde')]</option><option>//div[@id='navbar-main']/ul/li/a</option><option>//a[contains(@href, 'adminRegisterKunde.php')]</option><option>//li/a</option><option>css=li &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//input</option><option>css=#personnummer</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//input</option><option>css=#personnummer</option></datalist></td><td>personnummer</td>
+</tr>
+<tr><td>click</td><td>id=fornavn<datalist><option>id=fornavn</option><option>//input[@id='fornavn']</option><option>//div[2]/input</option><option>css=#fornavn</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=fornavn<datalist><option>id=fornavn</option><option>//input[@id='fornavn']</option><option>//div[2]/input</option><option>css=#fornavn</option></datalist></td><td>222222</td>
+</tr>
+<tr><td>click</td><td>//div[2]/div<datalist><option>//div[2]/div</option><option>css=div.row</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=etternavn<datalist><option>id=etternavn</option><option>//input[@id='etternavn']</option><option>//div[3]/input</option><option>css=#etternavn</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=etternavn<datalist><option>id=etternavn</option><option>//input[@id='etternavn']</option><option>//div[3]/input</option><option>css=#etternavn</option></datalist></td><td>99999</td>
+</tr>
+<tr><td>click</td><td>id=adresse<datalist><option>id=adresse</option><option>//input[@id='adresse']</option><option>//div[4]/input</option><option>css=#adresse</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=adresse<datalist><option>id=adresse</option><option>//input[@id='adresse']</option><option>//div[4]/input</option><option>css=#adresse</option></datalist></td><td>e</td>
+</tr>
+<tr><td>click</td><td>//div[2]/div<datalist><option>//div[2]/div</option><option>css=div.row</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=poststed<datalist><option>id=poststed</option><option>//input[@id='poststed']</option><option>//div[6]/input</option><option>css=#poststed</option></datalist></td><td>99</td>
+</tr>
+<tr><td>click</td><td>id=postnr<datalist><option>id=postnr</option><option>//input[@id='postnr']</option><option>//div[5]/input</option><option>css=#postnr</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=postnr<datalist><option>id=postnr</option><option>//input[@id='postnr']</option><option>//div[5]/input</option><option>css=#postnr</option></datalist></td><td>2222222</td>
+</tr>
+<tr><td>click</td><td>id=telefonnr<datalist><option>id=telefonnr</option><option>//input[@id='telefonnr']</option><option>//div[7]/input</option><option>css=#telefonnr</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=telefonnr<datalist><option>id=telefonnr</option><option>//input[@id='telefonnr']</option><option>//div[7]/input</option><option>css=#telefonnr</option></datalist></td><td>telefonnummer</td>
+</tr>
+<tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[8]/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[8]/input</option><option>css=#passord</option></datalist></td><td>1</td>
+</tr>
+<tr><td>click</td><td>id=regKunde<datalist><option>id=regKunde</option><option>//button[@id='regKunde']</option><option>//div[2]/button</option><option>css=#regKunde</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Registrer kunde<datalist><option>link=Registrer kunde</option><option>//a[contains(text(),'Registrer kunde')]</option><option>//div[@id='navbar-main']/ul/li/a</option><option>//a[contains(@href, 'adminRegisterKunde.php')]</option><option>//li/a</option><option>css=li &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//input</option><option>css=#personnummer</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//input</option><option>css=#personnummer</option></datalist></td><td>10101010101</td>
+</tr>
+<tr><td>click</td><td>id=fornavn<datalist><option>id=fornavn</option><option>//input[@id='fornavn']</option><option>//div[2]/input</option><option>css=#fornavn</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=fornavn<datalist><option>id=fornavn</option><option>//input[@id='fornavn']</option><option>//div[2]/input</option><option>css=#fornavn</option></datalist></td><td>11</td>
+</tr>
+<tr><td>type</td><td>id=etternavn<datalist><option>id=etternavn</option><option>//input[@id='etternavn']</option><option>//div[3]/input</option><option>css=#etternavn</option></datalist></td><td>11</td>
+</tr>
+<tr><td>click</td><td>id=adresse<datalist><option>id=adresse</option><option>//input[@id='adresse']</option><option>//div[4]/input</option><option>css=#adresse</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=adresse<datalist><option>id=adresse</option><option>//input[@id='adresse']</option><option>//div[4]/input</option><option>css=#adresse</option></datalist></td><td>11</td>
+</tr>
+<tr><td>click</td><td>id=poststed<datalist><option>id=poststed</option><option>//input[@id='poststed']</option><option>//div[6]/input</option><option>css=#poststed</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=poststed<datalist><option>id=poststed</option><option>//input[@id='poststed']</option><option>//div[6]/input</option><option>css=#poststed</option></datalist></td><td>11</td>
+</tr>
+<tr><td>click</td><td>id=postnr<datalist><option>id=postnr</option><option>//input[@id='postnr']</option><option>//div[5]/input</option><option>css=#postnr</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=postnr<datalist><option>id=postnr</option><option>//input[@id='postnr']</option><option>//div[5]/input</option><option>css=#postnr</option></datalist></td><td>11</td>
+</tr>
+<tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[8]/input</option><option>css=#passord</option></datalist></td><td>1</td>
+</tr>
+<tr><td>click</td><td>id=telefonnr<datalist><option>id=telefonnr</option><option>//input[@id='telefonnr']</option><option>//div[7]/input</option><option>css=#telefonnr</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=telefonnr<datalist><option>id=telefonnr</option><option>//input[@id='telefonnr']</option><option>//div[7]/input</option><option>css=#telefonnr</option></datalist></td><td>11</td>
+</tr>
+<tr><td>click</td><td>id=regKunde<datalist><option>id=regKunde</option><option>//button[@id='regKunde']</option><option>//div[2]/button</option><option>css=#regKunde</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Registrer kunde<datalist><option>link=Registrer kunde</option><option>//a[contains(text(),'Registrer kunde')]</option><option>//div[@id='navbar-main']/ul/li/a</option><option>//a[contains(@href, 'adminRegisterKunde.php')]</option><option>//li/a</option><option>css=li &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=regKunde<datalist><option>id=regKunde</option><option>//button[@id='regKunde']</option><option>//div[2]/button</option><option>css=#regKunde</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne registrere en ny konto til en kunde</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
@@ -103,34 +197,6 @@
 </tr>
 <tr><td>click</td><td>id=regKonto<datalist><option>id=regKonto</option><option>//button[@id='regKonto']</option><option>//div[2]/button</option><option>css=#regKonto</option></datalist></td><td></td>
 </tr>
-<tr><td>click</td><td>link=Register konto<datalist><option>link=Register konto</option><option>//a[contains(text(),'Register konto')]</option><option>//div[@id='navbar-main']/ul/li[3]/a</option><option>//a[contains(@href, 'adminRegisterKonto.php')]</option><option>//li[3]/a</option></datalist></td><td></td>
-</tr>
-<tr><td>click</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//input[@id='kontoNr']</option><option>//input</option><option>css=#kontoNr</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//input[@id='kontoNr']</option><option>//input</option><option>css=#kontoNr</option></datalist></td><td>20202020202</td>
-</tr>
-<tr><td>assertValue</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//input[@id='kontoNr']</option><option>//input</option><option>css=#kontoNr</option></datalist></td><td>20202020202</td>
-</tr>
-<tr><td>click</td><td>id=type<datalist><option>id=type</option><option>//input[@id='type']</option><option>//div[2]/input</option><option>css=#type</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>id=type<datalist><option>id=type</option><option>//input[@id='type']</option><option>//div[2]/input</option><option>css=#type</option></datalist></td><td>Brukskonto</td>
-</tr>
-<tr><td>assertValue</td><td>id=type<datalist><option>id=type</option><option>//input[@id='type']</option><option>//div[2]/input</option><option>css=#type</option></datalist></td><td>Brukskonto</td>
-</tr>
-<tr><td>click</td><td>id=valuta<datalist><option>id=valuta</option><option>//input[@id='valuta']</option><option>//div[3]/input</option><option>css=#valuta</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>id=valuta<datalist><option>id=valuta</option><option>//input[@id='valuta']</option><option>//div[3]/input</option><option>css=#valuta</option></datalist></td><td>NOK</td>
-</tr>
-<tr><td>assertValue</td><td>id=valuta<datalist><option>id=valuta</option><option>//input[@id='valuta']</option><option>//div[3]/input</option><option>css=#valuta</option></datalist></td><td>NOK</td>
-</tr>
-<tr><td>click</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//div[4]/input</option><option>css=#personnummer</option></datalist></td><td></td>
-</tr>
-<tr><td>type</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//div[4]/input</option><option>css=#personnummer</option></datalist></td><td>30303030303</td>
-</tr>
-<tr><td>assertValue</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//div[4]/input</option><option>css=#personnummer</option></datalist></td><td>30303030303</td>
-</tr>
-<tr><td>click</td><td>id=regKonto<datalist><option>id=regKonto</option><option>//button[@id='regKonto']</option><option>//div[2]/button</option><option>css=#regKonto</option></datalist></td><td></td>
-</tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
@@ -166,7 +232,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne slette en konto</td></tr>
+<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne slette en eksisterende konto</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
@@ -202,7 +268,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne endre informasjon om kunde</td></tr>
+<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å kunne endre informasjon om en kunde</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
@@ -264,7 +330,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å registrere ny kunde</td></tr>
+<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg å registrere en ny kunde for å opprette nytt kundeforhold</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
@@ -354,6 +420,60 @@
 <tr><td>click</td><td>link=Endre<datalist><option>link=Endre</option><option>xpath=(//a[contains(text(),'Endre')])[3]</option><option>//a[@onclick='endreKonto(1)']</option><option>//div[@id='endreKonto']/table/tbody/tr/td[6]/a</option><option>//td[6]/a</option><option>css=a.btn.btn-success</option></datalist></td><td></td>
 </tr>
 <tr><td>assertValue</td><td>id=saldo1<datalist><option>id=saldo1</option><option>//input[@id='saldo1']</option><option>//div[@id='endreKonto']/table/tbody/tr/td[2]/input</option><option>//td[2]/input</option><option>css=#saldo1</option></datalist></td><td>47388.00</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Som administrator ønsker jeg feilmelding og stans av prosess når input er ugyldig under registrering av ny konto</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/Index.php<datalist><option>http://localhost/TestingBank/Index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Admin<datalist><option>link=Admin</option><option>//a[contains(text(),'Admin')]</option><option>//div[@id='navbar-main']/ul/li/a</option><option>//a[contains(@href, '/TestingBank/View/loggInnAdmin.php')]</option><option>//li/a</option><option>css=li &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=bruker<datalist><option>id=bruker</option><option>//input[@id='bruker']</option><option>//input</option><option>css=#bruker</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=bruker<datalist><option>id=bruker</option><option>//input[@id='bruker']</option><option>//input</option><option>css=#bruker</option></datalist></td><td>Admin</td>
+</tr>
+<tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td>Admin</td>
+</tr>
+<tr><td>click</td><td>id=loggInn<datalist><option>id=loggInn</option><option>//input[@id='loggInn']</option><option>//form/input</option><option>css=#loggInn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Register konto<datalist><option>link=Register konto</option><option>//a[contains(text(),'Register konto')]</option><option>//div[@id='navbar-main']/ul/li[3]/a</option><option>//a[contains(@href, 'adminRegisterKonto.php')]</option><option>//li[3]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//input[@id='kontoNr']</option><option>//input</option><option>css=#kontoNr</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//input[@id='kontoNr']</option><option>//input</option><option>css=#kontoNr</option></datalist></td><td>mmm</td>
+</tr>
+<tr><td>click</td><td>id=type<datalist><option>id=type</option><option>//input[@id='type']</option><option>//div[2]/input</option><option>css=#type</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=type<datalist><option>id=type</option><option>//input[@id='type']</option><option>//div[2]/input</option><option>css=#type</option></datalist></td><td>000</td>
+</tr>
+<tr><td>click</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//div[4]/input</option><option>css=#personnummer</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//div[4]/input</option><option>css=#personnummer</option></datalist></td><td>ssss</td>
+</tr>
+<tr><td>click</td><td>id=valuta<datalist><option>id=valuta</option><option>//input[@id='valuta']</option><option>//div[3]/input</option><option>css=#valuta</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=valuta<datalist><option>id=valuta</option><option>//input[@id='valuta']</option><option>//div[3]/input</option><option>css=#valuta</option></datalist></td><td>000</td>
+</tr>
+<tr><td>click</td><td>id=regKonto<datalist><option>id=regKonto</option><option>//button[@id='regKonto']</option><option>//div[2]/button</option><option>css=#regKonto</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//input[@id='kontoNr']</option><option>//input</option><option>css=#kontoNr</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//input[@id='kontoNr']</option><option>//input</option><option>css=#kontoNr</option></datalist></td><td>4444444</td>
+</tr>
+<tr><td>click</td><td>id=type<datalist><option>id=type</option><option>//input[@id='type']</option><option>//div[2]/input</option><option>css=#type</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//div[4]/input</option><option>css=#personnummer</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=personnummer<datalist><option>id=personnummer</option><option>//input[@id='personnummer']</option><option>//div[4]/input</option><option>css=#personnummer</option></datalist></td><td>01010110523</td>
+</tr>
+<tr><td>click</td><td>id=regKonto<datalist><option>id=regKonto</option><option>//button[@id='regKonto']</option><option>//div[2]/button</option><option>css=#regKonto</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Endre konto<datalist><option>link=Endre konto</option><option>//a[contains(text(),'Endre konto')]</option><option>//div[@id='navbar-main']/ul/li[4]/a</option><option>//a[contains(@href, 'adminEndreKonto.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
 </tr>
 </tbody></table>
 </body>
