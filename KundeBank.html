@@ -63,6 +63,10 @@
 <tr><td rowspan="1" colspan="3">Som kunde ønsker jeg feilmelding og stans av prosess når input er ugyldig under registrering av en betaling</td></tr>
 </thead>
 <tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBInit.php<datalist><option>http://localhost/TestingBank/DAL/DBInit.php</option></datalist></td><td></td>
+</tr>
 <tr><td>open</td><td>http://localhost/TestingBank/Index.php<datalist><option>http://localhost/TestingBank/Index.php</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>link=Logg inn<datalist><option>link=Logg inn</option><option>//a[contains(text(),'Logg inn')]</option><option>//a[contains(@href, 'View/loggInn.php')]</option><option>//div[2]/a</option><option>css=a.btn.btn-success</option></datalist></td><td></td>
@@ -97,12 +101,22 @@
 </tr>
 <tr><td>click</td><td>id=regBetaling<datalist><option>id=regBetaling</option><option>//button[@id='regBetaling']</option><option>//div[2]/button</option><option>css=#regBetaling</option></datalist></td><td></td>
 </tr>
+<tr><td>assertTextNotPresent</td><td>//div[@id='listBetalinger']/table/tbody/tr/td[2]<datalist><option>//div[@id='listBetalinger']/table/tbody/tr/td[2]</option><option>//td[2]</option></datalist></td><td>474747</td>
+</tr>
+<tr><td>assertNotText</td><td>//div[@id='listBetalinger']/table/tbody/tr/td[3]<datalist><option>//div[@id='listBetalinger']/table/tbody/tr/td[3]</option><option>//td[3]</option></datalist></td><td>22.01</td>
+</tr>
+<tr><td>assertNotText</td><td>//div[@id='listBetalinger']/table/tbody/tr/td[4]<datalist><option>//div[@id='listBetalinger']/table/tbody/tr/td[4]</option><option>//td[4]</option></datalist></td><td>Hei</td>
+</tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
 <tr><td rowspan="1" colspan="3">Som kunde ønsker jeg feilmelding og stans av prosess når input er ugyldig under endring av egen kundeinformasjon</td></tr>
 </thead>
 <tbody>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBDrop.php<datalist><option>http://localhost/TestingBank/DAL/DBDrop.php</option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>http://localhost/TestingBank/DAL/DBInit.php<datalist><option>http://localhost/TestingBank/DAL/DBInit.php</option></datalist></td><td></td>
+</tr>
 <tr><td>open</td><td>http://localhost/TestingBank/Index.php<datalist><option>http://localhost/TestingBank/Index.php</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>link=Logg inn<datalist><option>link=Logg inn</option><option>//a[contains(text(),'Logg inn')]</option><option>//a[contains(@href, 'View/loggInn.php')]</option><option>//div[2]/a</option><option>css=a.btn.btn-success</option></datalist></td><td></td>
@@ -148,6 +162,20 @@
 <tr><td>type</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[8]/div/input</option><option>css=#passord</option></datalist></td><td>1</td>
 </tr>
 <tr><td>click</td><td>id=endre<datalist><option>id=endre</option><option>//button[@id='endre']</option><option>//div[2]/button</option><option>css=#endre</option></datalist></td><td></td>
+</tr>
+<tr><td>assertNotValue</td><td>id=fornavn<datalist><option>id=fornavn</option><option>//input[@id='fornavn']</option><option>//input</option><option>css=#fornavn</option></datalist></td><td>111</td>
+</tr>
+<tr><td>assertNotValue</td><td>id=etternavn<datalist><option>id=etternavn</option><option>//input[@id='etternavn']</option><option>//div[3]/div/input</option><option>css=#etternavn</option></datalist></td><td>222</td>
+</tr>
+<tr><td>assertNotValue</td><td>id=adresse<datalist><option>id=adresse</option><option>//input[@id='adresse']</option><option>//div[4]/div/input</option><option>css=#adresse</option></datalist></td><td>33 Hei</td>
+</tr>
+<tr><td>assertNotValue</td><td>id=postnr<datalist><option>id=postnr</option><option>//input[@id='postnr']</option><option>//div[5]/div/input</option><option>css=#postnr</option></datalist></td><td>11</td>
+</tr>
+<tr><td>assertNotValue</td><td>id=poststed<datalist><option>id=poststed</option><option>//input[@id='poststed']</option><option>//div[6]/div/input</option><option>css=#poststed</option></datalist></td><td>333</td>
+</tr>
+<tr><td>assertNotValue</td><td>id=telefonnr<datalist><option>id=telefonnr</option><option>//input[@id='telefonnr']</option><option>//div[7]/div/input</option><option>css=#telefonnr</option></datalist></td><td>Hei</td>
+</tr>
+<tr><td>assertNotValue</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[8]/div/input</option><option>css=#passord</option></datalist></td><td>1</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -270,6 +298,30 @@
 <tr><td>click</td><td>id=regBetaling<datalist><option>id=regBetaling</option><option>//button[@id='regBetaling']</option><option>//div[2]/button</option><option>css=#regBetaling</option></datalist></td><td></td>
 </tr>
 <tr><td>click</td><td>//div[@id='listBetalinger']/table/tbody/tr/td[6]/button<datalist><option>//div[@id='listBetalinger']/table/tbody/tr/td[6]/button</option><option>//td[6]/button</option><option>css=button.btn.btn-success</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Transaksjoner<datalist><option>link=Transaksjoner</option><option>//a[contains(text(),'Transaksjoner')]</option><option>//div[@id='navbar-main']/ul/li[4]/a</option><option>//a[contains(@href, '../View/transaksjon.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//select[@id='kontoNr']</option><option>//div[@id='selekt']/select</option><option>//select</option><option>css=#kontoNr</option></datalist></td><td></td>
+</tr>
+<tr><td>select</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//select[@id='kontoNr']</option><option>//div[@id='selekt']/select</option><option>//select</option><option>css=#kontoNr</option></datalist></td><td>label=22334412345</td>
+</tr>
+<tr><td>click</td><td>id=kontoNr<datalist><option>id=kontoNr</option><option>//select[@id='kontoNr']</option><option>//div[@id='selekt']/select</option><option>//select</option><option>css=#kontoNr</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=fraDato<datalist><option>id=fraDato</option><option>//input[@id='fraDato']</option><option>//input</option><option>css=#fraDato</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=fraDato<datalist><option>id=fraDato</option><option>//input[@id='fraDato']</option><option>//input</option><option>css=#fraDato</option></datalist></td><td>2020-04-04</td>
+</tr>
+<tr><td>type</td><td>id=tilDato<datalist><option>id=tilDato</option><option>//input[@id='tilDato']</option><option>//div[3]/input</option><option>css=#tilDato</option></datalist></td><td>2020-04-04</td>
+</tr>
+<tr><td>click</td><td>id=sok<datalist><option>id=sok</option><option>//button[@id='sok']</option><option>//div[2]/button</option><option>css=#sok</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='listTransaksjoner']/table/tbody/tr/td<datalist><option>//div[@id='listTransaksjoner']/table/tbody/tr/td</option><option>//td</option><option>css=td</option></datalist></td><td>2020-04-04</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='listTransaksjoner']/table/tbody/tr/td[2]<datalist><option>//div[@id='listTransaksjoner']/table/tbody/tr/td[2]</option><option>//td[2]</option></datalist></td><td>10101010101</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='listTransaksjoner']/table/tbody/tr/td[3]<datalist><option>//div[@id='listTransaksjoner']/table/tbody/tr/td[3]</option><option>//td[3]</option></datalist></td><td>200</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='listTransaksjoner']/table/tbody/tr/td[4]<datalist><option>//div[@id='listTransaksjoner']/table/tbody/tr/td[4]</option><option>//td[4]</option></datalist></td><td>Bursdagspenger</td>
 </tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
@@ -403,7 +455,7 @@
 </tr>
 <tr><td>click</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td></td>
 </tr>
-<tr><td>type</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td>12345678912</td>
+<tr><td>type</td><td>id=personNr<datalist><option>id=personNr</option><option>//input[@id='personNr']</option><option>//input</option><option>css=#personNr</option></datalist></td><td>12345678901</td>
 </tr>
 <tr><td>click</td><td>id=passord<datalist><option>id=passord</option><option>//input[@id='passord']</option><option>//div[2]/div/input</option><option>css=#passord</option></datalist></td><td></td>
 </tr>
